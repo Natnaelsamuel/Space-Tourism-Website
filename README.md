@@ -40,7 +40,7 @@ The Space Tourism Website is a fully responsive web application designed for spa
 
 Check out the full project and code on GitHub:
 
-[**View on GitHub**](https://github.com/your-username/space-tourism-website)
+[**View on GitHub**](https://natnaelsamuel.github.io/Space-Tourism-Website/)
 
 ---
 
