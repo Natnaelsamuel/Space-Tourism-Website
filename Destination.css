@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    padding: 50px 5%;
+}
+
+.hr {
+    height: 1px;
+    width: 40vw;
+    margin-left: 50px;
+    background-color: rgb(146, 145, 145);
+    z-index: 1;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 50%;
+    height: 5rem;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right: 0;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 27px 40px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+}
+
+.nav-links ul li a spam {
+    font-weight: bold;
+    margin-right: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    transition: 0.5s;
+}
+
+.nav-links ul li a.active::after {
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+    background-color: rgb(146, 145, 145);
+}
+
+.body {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.left-container {
+    flex-basis: 50%;
+}
+
+.right-container {
+    flex-basis: 50%;
+    padding-top: 100px;
+}
+
+.left-container h1 {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.left-container img {
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+.h1-number {
+    color: rgb(146, 145, 145);
+}
+
+.tab-titles {
+    display: flex;
+}
+
+.tab-links {
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-links:hover::after {
+    width: 100%;
+    background-color: rgb(146, 145, 145,40%);
+}
+
+.tab-contents h2 {
+    font-size: 120px;
+    font-weight: 200;
+    margin: 15px auto;
+}
+
+.tab-contents p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+#hr2 {
+    margin: 35px 0;
+    width: 35vw;
+}
+
+.distance {
+    display: flex;
+}
+
+.distance .left {
+    flex-basis: 50%;
+}
+
+.distance .left #number, 
+.distance .right #number {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.distance .left:first-child {
+    font-size: 5px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-imgs {
+    display: none;
+}
+
+.tab-imgs.active-img {
+    display: block;
+}

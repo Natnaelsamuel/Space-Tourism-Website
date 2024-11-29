@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="Destination.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path
+                fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+              />
+            </g>
+          </svg>
+          <div class="hr"></div>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="./index.html"><spam>00</spam> HOME</a>
+            </li>
+            <li>
+              <a href="#" class="active"><spam>01</spam> DESTINATION</a>
+            </li>
+            <li>
+              <a href="./Crew.html"><spam>02</spam> CREW</a>
+            </li>
+            <li>
+              <a href="./Technology.html"><spam>03</spam> TECHNOLOGY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="left-container">
+          <h1><spam class="h1-number">01</spam> Pick your destination</h1>
+          <img
+            src="assets/destination/image-moon.png"
+            alt="Moon"
+            class="tab-imgs active-img"
+            id="moon-img"
+          />
+          <img
+            src="assets/destination/image-mars.png"
+            alt="Mars"
+            class="tab-imgs"
+            id="mars-img"
+          />
+          <img
+            src="assets/destination/image-europa.png"
+            alt="Europa"
+            class="tab-imgs"
+            id="europa-img"
+          />
+          <img
+            src="assets/destination/image-titan.png"
+            alt="Titan"
+            class="tab-imgs"
+            id="titan-img"
+          />
+        </div>
+        <div class="right-container">
+          <div class="tab-titles">
+            <p
+              class="tab-links active-link"
+              onclick="opentab('moon'); openimg('moon-img')"
+            >
+              Moon
+            </p>
+            <p class="tab-links" onclick="opentab('mars'); openimg('mars-img')">
+              Mars
+            </p>
+            <p
+              class="tab-links"
+              onclick="opentab('europa'); openimg('europa-img')"
+            >
+              Europa
+            </p>
+            <p
+              class="tab-links"
+              onclick="opentab('titan'); openimg('titan-img')"
+            >
+              Titan
+            </p>
+          </div>
+          <div class="tab-contents active-tab" id="moon">
+            <h2>Moon</h2>
+            <p>
+              See our planet as you’ve never seen it before. A perfect <br />
+              relaxing trip away to help regain perspective and come <br />
+              back refreshed. While you’re there, take in some history <br />
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+            <div id="hr2" class="hr"></div>
+            <div class="distance">
+              <div class="left">
+                <p>Avg. distance</p>
+                <p id="number">384,400 km</p>
+              </div>
+              <div class="right">
+                <p>Est. travel time</p>
+                <p id="number">3 days</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-contents" id="mars">
+            <h2>Mars</h2>
+            <p>
+              Don’t forget to pack your hiking boots. You’ll need them to <br />
+              tackle Olympus Mons, the tallest planetary mountain in <br />
+              our solar system. It’s two and a half times the size of <br />
+              Everest!
+            </p>
+            <div id="hr2" class="hr"></div>
+            <div class="distance">
+              <div class="left">
+                <p>Avg. distance</p>
+                <p id="number">225 mil. km</p>
+              </div>
+              <div class="right">
+                <p>Est. travel time</p>
+                <p id="number">9 months</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-contents" id="europa">
+            <h2>Europa</h2>
+            <p>
+              The smallest of the four Galilean moons orbiting Jupiter,<br />
+              Europa is a winter lover’s dream. With an icy surface, it’s<br />
+              perfect for a bit of ice skating, curling, hockey, or simple<br />
+              relaxation in your snug wintery cabin.
+            </p>
+            <div id="hr2" class="hr"></div>
+            <div class="distance">
+              <div class="left">
+                <p>Avg. distance</p>
+                <p id="number">628 mil. km</p>
+              </div>
+              <div class="right">
+                <p>Est. travel time</p>
+                <p id="number">3 years</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-contents" id="titan">
+            <h2>Titan</h2>
+            <p>
+              The only moon known to have a dense atmosphere other<br />
+              than Earth, Titan is a home away from home (just a few<br />
+              hundred degrees colder!). As a bonus, you get striking<br />
+              views of the Rings of Saturn.
+            </p>
+            <div id="hr2" class="hr"></div>
+            <div class="distance">
+              <div class="left">
+                <p>Avg. distance</p>
+                <p id="number">1.6 bil. km</p>
+              </div>
+              <div class="right">
+                <p>Est. travel time</p>
+                <p id="number">7 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Destination.js"></script>
+  </body>
+</html>

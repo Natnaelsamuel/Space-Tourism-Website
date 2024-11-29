@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="Technology.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path
+                fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+              />
+            </g>
+          </svg>
+          <div class="hr"></div>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="./index.html"><spam>00</spam> HOME</a>
+            </li>
+            <li>
+              <a href="./Destination.html"><spam>01</spam> DESTINATION</a>
+            </li>
+            <li>
+              <a href="./Crew.html"><spam>02</spam> CREW</a>
+            </li>
+            <li>
+              <a href="#" class="active"><spam>03</spam> TECHNOLOGY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="left-container">
+        <h1><spam class="h1-number">03</spam> Space launch 101</h1>
+        <div class="circletext">
+          <div class="circle-box">
+            <div
+              class="circle active-link"
+              onclick="opentab('launch'); openimg('launch-img');"
+            >
+              1
+            </div>
+            <div
+              class="circle"
+              onclick="opentab('spaceport'); openimg('spaceport-img');"
+            >
+              2
+            </div>
+            <div
+              class="circle"
+              onclick="opentab('capsule'); openimg('capsule-img');"
+            >
+              3
+            </div>
+          </div>
+          <div class="text">
+            <div class="tab-contents active-tab" id="launch">
+              <h2>The Terminology...</h2>
+              <h3>Launch vehicle</h3>
+              <p>
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                <br />
+                used to carry a payload from Earth's surface to space, usually
+                to
+                <br />
+                Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                <br />
+                powerful in operation. Standing 150 metres tall, it's quite an
+                <br />
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+            <div class="tab-contents" id="spaceport">
+              <h2>The Terminology...</h2>
+              <h3>Spaceport</h3>
+              <p>
+                A spaceport or cosmodrome is a site for launching (or <br />
+                receiving) spacecraft, by analogy to the seaport for ships or
+                <br />
+                airport for aircraft. Based in the famous Cape Canaveral, our
+                <br />
+                spaceport is ideally situated to take advantage of the Earth’s
+                <br />
+                rotation for launch.
+              </p>
+            </div>
+            <div class="tab-contents" id="capsule">
+              <h2>The Terminology...</h2>
+              <h3>Space capsule</h3>
+              <p>
+                A space capsule is an often-crewed spacecraft that uses a <br />
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                <br />
+                without wings. Our capsule is where you'll spend your time
+                <br />
+                during the flight. It includes a space gym, cinema, and plenty
+                of <br />
+                other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <img
+          src="assets/technology/image-launch-vehicle-portrait.jpg"
+          alt="Launch vehicle"
+          class="img-tabs active-img"
+          id="launch-img"
+        />
+        <img
+          src="assets/technology/image-spaceport-portrait.jpg"
+          alt="spaceport"
+          class="img-tabs"
+          id="spaceport-img"
+        />
+        <img
+          src="assets/technology/image-space-capsule-portrait.jpg"
+          alt="Space capsule"
+          class="img-tabs"
+          id="capsule-img"
+        />
+      </div>
+    </div>
+    <script src="Technology.js"></script>
+  </body>
+</html>
